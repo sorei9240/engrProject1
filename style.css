@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #61dafb;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+#hello-world {
+    font-size: 4em;
+    animation: floaty 5s ease-in-out infinite;
+    position: absolute;
+}
+#dog {
+    position: absolute;
+    width: 200px;
+    height: auto;
+}
+
+@keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
